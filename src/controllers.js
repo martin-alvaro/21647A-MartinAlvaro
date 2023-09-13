@@ -10,7 +10,6 @@ export const getPosts = async (req, res) => {
   }
 };
 
-
 export const getCreatePost = (req, res) => {
   res.render('create');
 };
@@ -24,7 +23,6 @@ export const postCreatePost = async (req, res) => {
       content,
       imageUrl
     });
-
     res.redirect('/');
   } catch (error) {
     console.error(error);

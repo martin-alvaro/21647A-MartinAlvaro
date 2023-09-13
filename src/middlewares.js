@@ -10,7 +10,6 @@ export const validateCreatePost = (req, res, next) => {
   }
 };
 
-
 //para que no se dupliquen 
 export const checkDuplicatePost = async (req, res, next) => {
   try {
