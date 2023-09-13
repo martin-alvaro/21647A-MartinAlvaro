@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Publicación</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Foro personalizado</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Actualizar Publicación</h2>
+        <form action="/update" method="POST" class="updateForm">
+            <input type="hidden" name="postId" value="<%= post.id %>">
+            <label for="title">Título:</label>
+            <input type="text" id="title" name="title" value="<%= post.title %>">
+
+            <label for="content">Contenido:</label>
+            <textarea id="content" name="content"><%= post.content %></textarea>
+
+            <label for="imageUrl">Enlace de la imagen (URL):</label>
+            <input type="text" id="imageUrl" name="imageUrl" value="<%= post.imageUrl %>">
+
+            <button type="submit">Guardar Cambios</button>
+        </form>
+    </main>
+
+
+
+
+
+</body>
+
+</html>

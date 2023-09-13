@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+header {
+    background-color: gold;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 70px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.cont-public {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+  }
+
+.cont-public div img {
+    width: 200px;
+    height: auto;
+}
+
+.cards {
+    min-width: 250px;
+    border: 2px solid rgb(255, 196, 0);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-update,
+.btn-delete {
+    background-color: gold;
+    color: black;
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 90px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.btn-update:hover,
+.btn-delete:hover {
+    background-color: #ffcc00;
+}
+
+
+.updateForm {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.updateForm label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.updateForm input[type="text"],.updateForm textarea {
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+
+
+.updateForm button[type="submit"] {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.updateForm button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+.createForm{
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.createForm label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.createForm input[type="text"],.createForm textarea {
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+.createForm button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.createForm button:hover {
+  background-color: #0056b3;
+}

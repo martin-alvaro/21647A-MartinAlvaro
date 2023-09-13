@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Publicación</title>
+    <link rel="stylesheet" href="/styles.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Foro personalizado</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Crear publicación </h2>
+        <form action="/create" method="POST" class="createForm">
+            <label for="title">Título:</label>
+            <input type="text" id="title" name="title">
+
+            <label for="content">Contenido:</label>
+            <textarea id="content" name="content"></textarea>
+
+            <label for="imageUrl">Enlace de la imagen (URL):</label>
+            <input type="text" id="imageUrl" name="imageUrl">
+
+            <button type="submit">Crear Publicación</button>
+        </form>
+    </main>
+
+</body>
+
+</html>
