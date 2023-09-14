@@ -1,5 +1,7 @@
+// Importacion del modelo de datos
 import { Post } from './model/db.model.js'; 
 
+// Middleware para validar la creacion de una publicacion
 export const validateCreatePost = (req, res, next) => {
   const { title, content } = req.body;
 
@@ -10,7 +12,7 @@ export const validateCreatePost = (req, res, next) => {
   }
 };
 
-//para que no se dupliquen 
+// Middleware para evitar la duplicacion de publicaciones
 export const checkDuplicatePost = async (req, res, next) => {
   try {
     const { title } = req.body;

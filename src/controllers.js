@@ -1,5 +1,7 @@
+// Importacion del modelo de datos
 import { Post } from './model/db.model.js';
 
+// Controlador para obtener todas las publicaciones
 export const getPosts = async (req, res) => {
   try {
     const posts = await Post.findAll();
@@ -10,10 +12,12 @@ export const getPosts = async (req, res) => {
   }
 };
 
+// Controlador para mostrar el formulario de creación de una publicacion
 export const getCreatePost = (req, res) => {
   res.render('create');
 };
 
+// Controlador para crear una nueva publicacion
 export const postCreatePost = async (req, res) => {
   const { title, content, imageUrl } = req.body;
 
@@ -30,6 +34,7 @@ export const postCreatePost = async (req, res) => {
   }
 };
 
+// Controlador para obtener una publicacion para su actualizacion
 export const getUpdatePost = async (req, res) => {
   const postId = parseInt(req.params.postId, 10);
 
@@ -48,6 +53,7 @@ export const getUpdatePost = async (req, res) => {
   }
 };
 
+// Controlador para actualizar una publicacion existente
 export const postUpdatePost = async (req, res) => {
   const postId = parseInt(req.body.postId, 10);
   const { title, content, imageUrl } = req.body;
@@ -75,6 +81,7 @@ export const postUpdatePost = async (req, res) => {
   }
 };
 
+// Controlador para eliminar una publicacion existente
 export const postDeletePost = async (req, res) => {
   const postId = parseInt(req.body.postId, 10);
 
